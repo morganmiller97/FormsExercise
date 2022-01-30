@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Excersie</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <Legend>Customer Experience Survey</Legend>
+            <div>
+                <label for="storeNumber">Store Number</label>
+                <select name="store Number" id="storeNumber">
+
+                    <option value="Select A Store" disable select hidden>Select A Store</option>
+                    <option value="3109">3109</option>
+                    <option value="2421">2421</option>
+                    <option value="5357">5357</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>When You Visited:</legend>
+                    <label for="date">Date Visited</label>
+                    <input type="date" name="date" id="date" min="mm/dd/yyyy" max="mm/dd/yyyy-">
+                    <br>
+                    <label for="time">Time</label>
+                    <input type="time" value="--:-- --">
+                </fieldset>
+            </div>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" placeholder="Full Name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email">
+
+            </div>
+            <div>
+                <fieldset>
+                    <legend> How would you rate your level of satisfaction with your visit?</legend>
+                    <div>
+                        <input type="radio" id="sat" name="rate" value="Satisfied"></input>
+                        <label for="sat">Satisfied</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sat" name="rate" value="Neither Satisfied nor Dissatisfied"></input>
+                        <label for="sat">Neither Satisfied nor Dissatisfied</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sat" name="rate" value="Dissatisfied"></input>
+
+                        <label for="sat">Dissatisfied</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="questions">Tell us about your experience:</label>
+                    <br>
+                    <textarea name="question" id="question" cols="20" rows="2"></textarea>
+                </div>
+                <div>
+                    <label for="visitLastMonth">Times visited in the last month:</label>
+                    <br>
+                    <input type="visitLastnumber" name="visit" id="visit" step="1" min="1" max="30">
+                </div>
+                <div>
+                    <input type="checkbox" name="check" id="check" required>
+                    <label for="check">Please check this box if you are willing to be contacted about your
+                        experience</label>
+                </div>
+                <div>
+                    <input type="reset"></input>
+                    <input type="submit" value="Submit"></input>
+                </div>
+
+</body>
+
+</html>
